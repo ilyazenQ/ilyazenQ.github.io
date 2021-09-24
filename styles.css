@@ -16,15 +16,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  max-width: 600px;
 }
 .square {
-width: 16px;
-height: 16px;
+width: 20px;
+height: 25px;
 background: #1d1d1d;
 margin: 2px;
 box-shadow: 0 0 2px #000;
-transition: 2s ease;
+transition: 3s ease;
 }
 .circle {
   width: 20px;
@@ -37,4 +37,16 @@ transition: 2s ease;
 }
 .square:hover {
   transition-duration: 0s;
+}
+@media (max-width: 767px) {
+  .container{
+   
+    max-width: 318px;
+  }
+  .square {
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+  transition: 2s ease;
+  }
 }
