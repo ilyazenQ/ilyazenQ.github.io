@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",(function(){new ChiefSlider(".slider",{loop:!1})}));

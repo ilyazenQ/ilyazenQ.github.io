@@ -19,7 +19,6 @@
 </head>
 <body>
 <section class="video-block">
-
    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
    <div class="overlay"></div>
  
@@ -28,7 +27,13 @@
       <source src="img/Mt_Baker.mp4" type="video/mp4">
       <source src="img/Mt_Baker.webm" type="video/webm">
     </video>
+    
     <header>
+      <div class="btn-req-wrapper">
+      <button type="button" class="btn btn-req-mobail btn-outline-secondary">
+        ОСТАВИТЬ ЗАЯВКУ
+     </button>
+     </div>
       <div class="header__upper-nav">
          <div class="overflow-wrapper container upper-nav">
 
@@ -103,14 +108,17 @@
           
        </div>
      </nav>
+     
     </header>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Offcanvas справа</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
       </div>
-      <div class="offcanvas-body" style="background-color: black;">
-        ...
+      <div class="offcanvas-body" style="background-color: white;">
+        <a href="/">Главная</a>
+        <a href="/index-catalog.html">Каталог</a>
+        <a href="/index-single.html">Тур</a>
       </div>
     </div>
 
@@ -573,37 +581,47 @@ viewBox="0 0 259314 190000"
 
     </div>
   </section>
- 
+  
  </section>
- <section class="calendar container">
-   <div class="section-title">
-      <div class="section-title__left">
-      <div class="section-title__img">
-         <img src="/img/icons/rv.png"
-         alt="Wind">
-      </div>
-      <div class="section-title__text">
-         <h4>
-            КАЛЕНДАРЬ ТУРОВ
-         </h4>
-      </div>
-   </div>
-      <a href="" class="my-link"><div class="section-title__show-more show-more">
-         <p class="show-more__text">
-            больше туров
-         </p>
-         <img src="/img/icons/a.png"
-         alt="Arrow" class="show-more__img">
-      </div>
-   </a>
+ <div class="calendar-wrapper">
 
+   <div class="calendar-move-right" style="background-image: url(/img/icons/np.png);">
+     
    </div>
-      <div class="section-body__main-title">
-         <h2>
-            БЛИЖАЙШИЕ ПУТЕШЕСТВИЯ
-         </h2>
-      </div>
-   <div class="section-body calendar-body">
+
+<div class="section-title section-title-calendar overflow-wrapper container">
+   <div class="section-title__left">
+   <div class="section-title__img">
+      <img src="/img/icons/rv.png"
+      alt="Wind">
+   </div>
+   <div class="section-title__text">
+      <h4>
+         КАЛЕНДАРЬ ТУРОВ
+      </h4>
+   </div>
+</div>
+   <a href="" class="my-link"><div class="section-title__show-more show-more">
+      <p class="show-more__text">
+         больше туров
+      </p>
+      <img src="/img/icons/a.png"
+      alt="Arrow" class="show-more__img">
+   </div>
+</a>
+
+</div>
+   <div class="section-body__main-title overflow-wrapper container">
+      <h2>
+         БЛИЖАЙШИЕ ПУТЕШЕСТВИЯ
+      </h2>
+   </div>
+<section class="calendar container-large">
+   
+  
+   <div class="section-body calendar-body ">
+      
+      
       <div class="col-title">
          <p>
             ЯНВАРЬ
@@ -619,13 +637,20 @@ viewBox="0 0 259314 190000"
          </p>
         </div>
         <!-- ROW -->
-       
+        <!-- <div class="row-arrow">
         
+         </div>-->
+         
       <div class="row">
+         
+      
+            
+            
+            
          <div class="row-title-wrap">
          <div class="row-title">
-            <p style="line-height: 65px;">
-               БАЙКАЛ 
+            <p style="line-height: 42px;">
+               МОНГОЛИЯ
             </p> 
            </div>
            </div>
@@ -650,12 +675,12 @@ viewBox="0 0 259314 190000"
     
          <div class="calendar-card__date">
             <p>
-               22-26
+               22/03-26/03
             </p>
          </div>
          <div class="calendar-card__text">
-            <h3>
-               ЗИМНЯЯ СКАЗКА ЗИ СКАЗКА ЗИМНЯЯ 
+            <h3 style="font-size: 18px;">
+               БОЛЬШОЕ ПУТЕШЕСТВИЕ
             </h3>
          </div>
         <a href="my-link"> <div class="calendar-card_img-block" style=" background-image: url(/img/ci2.png);">
@@ -688,12 +713,12 @@ viewBox="0 0 259314 190000"
        
             <div class="calendar-card__date">
                <p>
-                  22 - 26
+                  22/03-26/03
                </p>
             </div>
             <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА 
+               <h3 style="font-size: 18px;">
+                  СЕРДЦЕ МОНГОЛИИ  
                </h3>
             </div>
            
@@ -708,7 +733,11 @@ viewBox="0 0 259314 190000"
             </div>
          
             <!-- CARD  END -->
-
+            <div class="calendar-card-empty">
+                  
+                 
+         
+            </div>
              <!-- CARD -->
          <div class="calendar-card">
             
@@ -729,11 +758,11 @@ viewBox="0 0 259314 190000"
        
             <div class="calendar-card__date">
                <p>
-                  22  - 26
+                  22/03-26/03
                </p>
             </div>
             <div class="calendar-card__text">
-               <h3>
+               <h3 style="font-size: 18px;">
                   ЗИМНЯЯ СКАЗКА
                </h3>
             </div>
@@ -746,25 +775,26 @@ viewBox="0 0 259314 190000"
    
             </div>
             <!-- CARD  END -->
-     
+           
       </div>
+      
+        
       <!-- ROW  END-->
+      
+
               <!-- ROW -->
-              <div class="row-title-mobail">
-               <p>
-                  МОНГОЛИЯ 
-               </p> 
-              </div>
               <div class="row">
+               
                <div class="row-title-wrap">
                <div class="row-title">
-                  <p style="line-height: 45px;">
-                     МОНГОЛИЯ 
+                  <p style="line-height: 56px;">
+                     БАЙКАЛ
                   </p> 
                  </div>
-               </div>
+                 </div>
+                  
                <!-- CARD -->
-               <div class="calendar-card">
+               <div class="calendar-card first-card">
                   
                <div class="calendar-add-block">
                   <span class="calendar-add">
@@ -783,15 +813,15 @@ viewBox="0 0 259314 190000"
           
                <div class="calendar-card__date">
                   <p>
-                     22 - 26
+                     22/03-26/03
                   </p>
                </div>
                <div class="calendar-card__text">
-                  <h3>
-                     ЗИМНЯЯ СКАЗКА
+                  <h3 style="font-size: 18px;">
+                     ВЫХОДНЫЕ НА БАЙКАЛЕ
                   </h3>
                </div>
-              <a href="my-link"> <div class="calendar-card_img-block">
+              <a href="my-link"> <div class="calendar-card_img-block" style=" background-image: url(/img/ci2.png);">
                   <p>
                      программа 
                   </p>
@@ -803,370 +833,200 @@ viewBox="0 0 259314 190000"
       
                 <!-- CARD -->
                 <div class="calendar-card-empty">
-                  
-                 
-         
-                  </div>
+                        
+                       
+               
+               </div>
+               
                   <!-- CARD  END -->
-      
+                  <div class="calendar-card">
+                  
+                     <div class="calendar-add-block">
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                     </div>
+                
+                     <div class="calendar-card__date">
+                        <p>
+                           22/03-26/03
+                        </p>
+                     </div>
+                     <div class="calendar-card__text">
+                        <h3 style="font-size: 16px;">
+                           ПУТЕШЕСТВИЕ ДО ОЛЬХОНА
+                        </h3>
+                     </div>
+                    <a href="my-link"> <div class="calendar-card_img-block">
+                        <p>
+                           программа 
+                        </p>
+                     </div>
+                  </a>
+            
+                     </div>
                    <!-- CARD -->
-               <div class="calendar-card">
-                  
-                  <div class="calendar-add-block">
-                     <span class="calendar-add">
-                     </span>
-                     <span class="calendar-add">
-                     </span>
-                     <span class="calendar-add">
-                     </span>
-                     <span class="calendar-add">
-                     </span>
-                     <span class="calendar-add">
-                     </span>
-                     <span class="calendar-add">
-                     </span>
-                  </div>
-             
-                  <div class="calendar-card__date">
-                     <p>
-                        22 - 26
-                     </p>
-                  </div>
-                  <div class="calendar-card__text">
-                     <h3>
-                        ЗИМНЯЯ СКАЗКА
-                     </h3>
-                  </div>
-                 <a href="my-link"> <div class="calendar-card_img-block">
-                     <p>
-                        программа 
-                     </p>
-                  </div>
-               </a>
-         
-                  </div>
+              
                   <!-- CARD  END -->
-           
+                 
             </div>
             <!-- ROW  END-->
                     <!-- ROW -->
-                    <div class="row-title-mobail">
-                     <p>
-                        КРАСНОЯРСК 
-                     </p> 
-                    </div>
-      <div class="row">
-         <div class="row-title-wrap">
-         <div class="row-title">
-            <p style="line-height: 36px;">
-               КРАСНОЯРСК
-            </p> 
-           </div>
-            </div>
-         <!-- CARD -->
-         <div class="calendar-card-empty">
+                    <div class="row">
+                    
+                     <div class="row-title-wrap">
+                     <div class="row-title">
+                        <p style="line-height: 33px;">
+                           КРАСНОЯРСК
+                        </p> 
+                       </div>
+                       </div>
+                        
+                     <!-- CARD -->
+                     <div class="calendar-card first-card">
+                        
+                     <div class="calendar-add-block">
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                        <span class="calendar-add">
+                        </span>
+                     </div>
+                
+                     <div class="calendar-card__date">
+                        <p>
+                           22/03-26/03
+                        </p>
+                     </div>
+                     <div class="calendar-card__text">
+                        <h3 style="font-size: 18px;">
+                           БОЛЬШОЕ ПУТЕШЕСТВИЕ
+                        </h3>
+                     </div>
+                    <a href="my-link"> <div class="calendar-card_img-block" style=" background-image: url(/img/ci2.png);">
+                        <p>
+                           программа 
+                        </p>
+                     </div>
+                  </a>
             
-         
-
-         </div>
-         <!-- CARD  END -->
-
-          <!-- CARD -->
-          <div class="calendar-card">
+                     </div>
+                     <!-- CARD  END -->
             
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22 - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА 
-               </h3>
-            </div>
-           <a href="my-link"> <div class="calendar-card_img-block">
-               <p>
-                  программа 
-               </p>
-            </div>
-         </a>
-   
-            </div>
-            <!-- CARD  END -->
-
-            <!-- CARD -->
-          <div class="calendar-card">
-            
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22 - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА 
-               </h3>
-            </div>
-           <a href="my-link"> <div class="calendar-card_img-block">
-               <p>
-                  программа 
-               </p>
-            </div>
-         </a>
-   
-            </div>
-            <!-- CARD  END -->
-
-             <!-- CARD -->
-         <div class="calendar-card">
-            
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22 - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА
-               </h3>
-            </div>
-           <a href="my-link"> <div class="calendar-card_img-block">
-               <p>
-                  программа 
-               </p>
-            </div>
-         </a>
-   
-            </div>
-            <!-- CARD  END -->
-     
-      </div>
+                      <!-- CARD -->
+                      <div class="calendar-card">
+                        <a href="my-link"> 
+                        <div class="calendar-add-block">
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                        </div>
+                   
+                        <div class="calendar-card__date">
+                           <p>
+                              22/03-26/03
+                           </p>
+                        </div>
+                        <div class="calendar-card__text">
+                           <h3 style="font-size: 18px;">
+                              СЕРДЦЕ МОНГОЛИИ  
+                           </h3>
+                        </div>
+                       
+                          <div class="calendar-card_img-block" style=" background-image: url(/img/ci.png);">
+                         
+                           <p>
+                              программа 
+                           </p>
+                        </div>
+                     
+                        </a>
+                        </div>
+                     
+                        <!-- CARD  END -->
+                        <div class="calendar-card-empty">
+                              
+                             
+                     
+                        </div>
+                         <!-- CARD -->
+                     <div class="calendar-card">
+                        
+                        <div class="calendar-add-block">
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                           <span class="calendar-add">
+                           </span>
+                        </div>
+                   
+                        <div class="calendar-card__date">
+                           <p>
+                              22/03-26/03
+                           </p>
+                        </div>
+                        <div class="calendar-card__text">
+                           <h3 style="font-size: 18px;">
+                              ЗИМНЯЯ СКАЗКА
+                           </h3>
+                        </div>
+                       <a href="my-link"> <div class="calendar-card_img-block">
+                           <p>
+                              программа 
+                           </p>
+                        </div>
+                     </a>
+               
+                        </div>
+                        <!-- CARD  END -->
+                        
+                  </div>
       <!-- ROW  END-->
         <!-- ROW -->
        
         
-        <div class="row">
-         <div class="row-title-wrap">
-         <div class="row-title">
-            <p style="line-height: 65px;">
-               БАЙКАЛ 
-            </p> 
-           </div>
-           </div>
-            
-         <!-- CARD -->
-         <div class="calendar-card first-card">
-            
-         <div class="calendar-add-block">
-            <span class="calendar-add">
-            </span>
-            <span class="calendar-add">
-            </span>
-            <span class="calendar-add">
-            </span>
-            <span class="calendar-add">
-            </span>
-            <span class="calendar-add">
-            </span>
-            <span class="calendar-add">
-            </span>
-         </div>
-    
-         <div class="calendar-card__date">
-            <p>
-               22-26
-            </p>
-         </div>
-         <div class="calendar-card__text">
-            <h3>
-               ЗИМНЯЯ СКАЗКА ЗИ СКАЗКА ЗИМНЯЯ 
-            </h3>
-         </div>
-        <a href="my-link"> <div class="calendar-card_img-block" style=" background-image: url(/img/ci2.png);">
-            <p>
-               программа 
-            </p>
-         </div>
-      </a>
-
-         </div>
-         <!-- CARD  END -->
-
-          <!-- CARD -->
-          <div class="calendar-card">
-            <a href="my-link"> 
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22 - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА 
-               </h3>
-            </div>
-           
-              <div class="calendar-card_img-block" style=" background-image: url(/img/ci.png);">
-             
-               <p>
-                  программа 
-               </p>
-            </div>
-         
-            </a>
-            </div>
-         
-            <!-- CARD  END -->
-
-             <!-- CARD -->
-         <div class="calendar-card">
-            
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22  - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА
-               </h3>
-            </div>
-           <a href="my-link"> <div class="calendar-card_img-block">
-               <p>
-                  программа 
-               </p>
-            </div>
-         </a>
-   
-            </div>
-            <!-- CARD  END -->
-            
-                  <!-- CARD -->
-         <div class="calendar-card">
-            
-            <div class="calendar-add-block">
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-               <span class="calendar-add">
-               </span>
-            </div>
-       
-            <div class="calendar-card__date">
-               <p>
-                  22  - 26
-               </p>
-            </div>
-            <div class="calendar-card__text">
-               <h3>
-                  ЗИМНЯЯ СКАЗКА
-               </h3>
-            </div>
-           <a href="my-link"> <div class="calendar-card_img-block">
-               <p>
-                  программа 
-               </p>
-            </div>
-         </a>
-   
-            </div>
-            <!-- CARD  END -->
-         
-      </div>
+        
       <!-- ROW  END-->
-      <div class="calendar-move-right">
-
-      </div>
-   </div>
-
+      
+</div>
 </section>
-
+</div>
 
 <div class="scout-wrapper">
 
-<section class="scout">  
+<section class="scout" style="background-image: url(/img/sb.png);">  
    <div class="container">
       <div class="section-title">
          <div class="section-title__left">
@@ -1203,14 +1063,12 @@ viewBox="0 0 259314 190000"
       
       <ul class="scout-list">
          <li class="scout-item">
-               <img src="/img/icons/s5.png" alt="Icon">
                <p>
                   Имеется спорная точка зрения, гласящая примерно следующее: стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут объединены в целые кластеры себе подобных.
                </p>
          </li>
 
          <li class="scout-item">
-               <img src="/img/icons/s5.png" alt="" >
                <p>
                   Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
                </p>
@@ -1218,17 +1076,18 @@ viewBox="0 0 259314 190000"
          </li>
 
          <li class="scout-item">
-               <img src="/img/icons/s5.png" alt="" >
+               <img src="/img/icons/d.png" alt="" >
                <p>
-                  А ещё реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга/
+                  Повседневная практика показывает, что современная методология разработки представляет собой.
                </p>
          </li>
 
          <li class="scout-item">
-               <img src="/img/icons/s5.png" alt="" >
+               <img src="/img/icons/d.png" alt="" >
                <p>
-                  Предварительные выводы неутешительны: синтетическое тестирование напрямую зависит от первоочередных требований.
+                  Повседневная практика показывает, что современная методология разработки представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений.
                </p>
+
          </li>
       </ul>
    </div>
@@ -1411,11 +1270,11 @@ viewBox="0 0 259314 190000"
       <div class="main-card-wrap">
          <!-- CARD -->
          <div class="blog-inner__main-card">
-         <a href="">
+         <a href="" class="my-link">
             <div class="main-card__img" 
             style="background-image: url(/img/bi2.png);">
             </div>
-         </a>
+         
          <h2 class="main-card__title">
             СЕМЕЙНЫЙ ОТДЫХ
          </h2>
@@ -1425,27 +1284,26 @@ viewBox="0 0 259314 190000"
          <p class="main-card__date">
             20.07.21
          </p>
-
+      </a>
          </div>
          <!-- CARD END -->
                   <!-- CARD -->
                   <div class="blog-inner__main-card">
-                     <a href="">
+                     <a href="" class="my-link">
                         <div class="main-card__img" 
                         style="background-image: url(/img/bi1.png);">
                         </div>
-                     </a>
+                     
                      <h2 class="main-card__title">
-                        ЗАГОЛОВОК БОЛЬШЕ ПЕРЕНОС
-                     </h2>
+                        путешествие до ольхона                     </h2>
                      <p class="main-card__text">
-                        описание больше перенос test test testtest testtesttesttest
-                     </p>
+                        Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское обеспечение нашей.                     </p>
                      <p class="main-card__date">
                         20.07.21
                      </p>
             
                      </div>
+                  </a>
                      <!-- CARD END -->
 
       </div>
@@ -1467,11 +1325,21 @@ viewBox="0 0 259314 190000"
       <a href="" class="my-link">
          <div class="blog-inner__add-card">
             <h2 class="main-card__title">
-               путешествие по камчатке
+               байкал за 10 дней                        </h2>
+            <p class="main-card__text">
+               Еда, вода, горы, солнце.            </p>
+            <p class="main-card__date">
+               20.07.21
+            </p>
+         </div>
+      </a>
+      <a href="" class="my-link">
+         <div class="blog-inner__add-card">
+            <h2 class="main-card__title">
+               красоты алтая в январе
                         </h2>
             <p class="main-card__text">
-               Если вы не видите медведя, значит медведь видит вас
-            </p>
+               Господа, разбавленное изрядной долей эмпатии, рациональное мышление требует анализа экспериментов, поражающих по своей масштабности и грандиозности.            </p>
             <p class="main-card__date">
                20.07.21
             </p>
