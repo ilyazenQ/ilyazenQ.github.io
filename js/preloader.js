@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){let e=document.getElementById("preloader");e.classList.add("hide-preloader"),setInterval((function(){e.classList.add("preloader-hidden")}),990)};
