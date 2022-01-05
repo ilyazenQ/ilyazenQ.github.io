@@ -9,6 +9,9 @@
   margin-top: 30px;
   z-index: 10;
 }
+.map-block .hidden {
+  display: none;
+}
 .map-block .search-input {
   border: none;
   margin-bottom: 15px;
@@ -216,6 +219,92 @@
   font-size: 3023.8px;
   font-family: "Book Antiqua";
 }
+.map-block__map .add-map {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: -30%;
+  left: 30%;
+}
+@font-face {
+  .map-block__map .yakutia-map {
+    font-family: "Book Antiqua";
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+    src: url("#FontID0") format(svg);
+  }
+}
+.map-block__map .yakutia-map .str1 {
+  stroke-width: 15.1;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str3 {
+  stroke: white;
+  stroke-width: 121.9;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str0 {
+  stroke: white;
+  stroke-width: 73.6;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str2 {
+  stroke: white;
+  stroke-width: 76.2;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .fil2 {
+  fill: none;
+}
+.map-block__map .yakutia-map .fil1 {
+  fill: white;
+}
+.map-block__map .yakutia-map .fil4 {
+  fill: aqua;
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil3 {
+  fill: white;
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil0 {
+  fill: url(#id0);
+}
+.map-block__map .yakutia-map .fil5 {
+  fill: url(#id1);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil8 {
+  fill: url(#id2);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil9 {
+  fill: url(#id3);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil10 {
+  fill: url(#id4);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil6 {
+  fill: url(#id5);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil7 {
+  fill: url(#id6);
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fnt1 {
+  font-weight: normal;
+  font-size: 5050px;
+  font-family: "Book Antiqua";
+}
+.map-block__map .yakutia-map .fnt0 {
+  font-weight: normal;
+  font-size: 5050.3px;
+  font-family: "Book Antiqua";
+}
 
 @media (max-width: 1256px) {
   .map-block__map {
@@ -363,18 +452,23 @@
 
   .map-block__map {
     z-index: 1;
-    display: block;
     height: 400px;
     margin-bottom: 30px;
   }
   .map-block__map .main-map {
     position: absolute;
-    display: block;
     transform: scale(1.8);
     width: 100%;
     height: 100%;
     top: -25%;
     left: -35%;
+  }
+  .map-block__map .add-map {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: -25%;
+    left: 10%;
   }
 }
 @media (max-width: 401px) {
@@ -423,15 +517,20 @@
 
   .map-block__map {
     z-index: 1;
-    display: block;
     height: 400px;
   }
   .map-block__map .main-map {
     position: absolute;
-    display: block;
     transform: scale(1.9);
     width: 100%;
     height: 100%;
     left: -35%;
+  }
+  .map-block__map .add-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -25%;
+    left: 0%;
   }
 }

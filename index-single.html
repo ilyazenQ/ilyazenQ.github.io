@@ -27,94 +27,94 @@
 
   
 
-<header>
-  
-  <div class="btn-req-wrapper">
-  <button type="button" class="btn btn-req-mobail btn-outline-secondary">
-    ОСТАВИТЬ ЗАЯВКУ
- </button>
- </div>
-  <div class="header__upper-nav">
-     <div class="overflow-wrapper container upper-nav">
+  <header>
+    <!--  <div class="btn-req-wrapper">
+     <button type="button" class="btn btn-req-mobail btn-outline-secondary">
+       ОСТАВИТЬ ЗАЯВКУ
+    </button>
+    </div>-->
+     <div class="header__upper-nav">
+        <div class="overflow-wrapper container upper-nav">
 
-     <div class="phone-block">
-        <p>
-           <a href="">+7 800 555 35 35</a>
-        </p>
-     </div>
-     <div class="social-block">
-        <a href="" class="social-link">
-           <img src="/img/icons/w.png" alt="Social-icon" width="25px"
-           height="25px"></a>
-        <a href="" class="social-link">
-           <img src="/img/icons/fb.png" alt="Social-icon"  width="25px"
-           height="25px"></a>
-        <a href="" class="social-link">
-           <img src="/img/icons/in.png" alt="Social-icon"  width="25px"
-           height="25px"></a>
-     </div>
-     <div class="lang-block">
-      <ul>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            RU
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">EN</a></li>
-
-          </ul>
+        <div class="phone-block">
+           <p>
+              <a href="">+7 800 555 35 35</a>
+           </p>
         </div>
-        </li>
-      </ul>
-     </div>
-
-  </div>
-
-  </div>
-
-  <nav class="main-nav navbar navbar-expand-lg py-3">
-   <div class="overflow-wrapper container">
-     
-     <div class="main-nav__down-nav down-nav">
-
-        <div class="down-nav__block-title">
-           
-           <div class="title-logo">
-            <a href="/" class="my-link" style="color:white">
-              <img src="img/logo.png" alt="Logo">
-            
-          </div>
-          <div class="title-text">
-             <h1 class="title-text__upper">
-                SIBERIA EXPLORER
-             </h1>
-             <h2 class="title-text__down">
-                туроператор по сибири и дальнему востоку
-             </h2>
-          </div>
-        </a>
+        <div class="social-block">
+       <a href="" class="social-link">
+          <img src="/img/icons/so1.svg" alt="Social-icon" width="25px"
+          height="25px"></a>
+       <a href="" class="social-link">
+          <img src="/img/icons/so2.svg" alt="Social-icon"  width="25px"
+          height="25px"></a>
+       <a href="" class="social-link">
+          <img src="/img/icons/so3.svg" alt="Social-icon"  width="25px"
+          height="25px">
+         </a>
+    </div>
+        <div class="lang-block">
+         <ul>
+           <div class="dropdown">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+               RU <span><img src="/img/icons/r.svg" alt="Стрелка">
+               
+               </span>
+             </button>
+             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">EN</a></li>
+   
+             </ul>
+           </div>
+           </li>
+         </ul>
         </div>
 
-        <div class="down-nav__block-button">
-           <button type="button" class="btn btn-req btn-outline-secondary">
-              ОСТАВИТЬ ЗАЯВКУ
-           </button>
-           <button type="button" class="my-btn btn-canv" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <img  src="/img/icons/bm.svg" alt="Button">   
+     </div>
+
+     </div>
+
+     <nav class="main-nav navbar navbar-expand-lg py-3">
+      <div class="overflow-wrapper container">
+        
+        <div class="main-nav__down-nav down-nav">
+
+           <div class="down-nav__block-title">
+              
+              <div class="title-logo">
+               <a href="/" class="my-link" style="color:white">
+                 <img src="img/logo.png" alt="Logo">
+               
+             </div>
+             <div class="title-text">
+                <h1 class="title-text__upper">
+                   SIBERIA EXPLORER
+                </h1>
+                <h2 class="title-text__down">
+                   туроператор по сибири и дальнему востоку
+                </h2>
+             </div>
+           </a>
+           </div>
+
+           <div class="down-nav__block-button">
+              <button type="button" class="btn btn-req btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 ОСТАВИТЬ ЗАЯВКУ
+              </button>
+              <button type="button" class="my-btn btn-canv" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+               <img  src="/img/icons/bm.svg" alt="Button">
               </button>
 
 
+           </div>
+
         </div>
 
-     </div>
-
-      
-   </div>
- </nav>
-
-
-
-</header>
+         
+      </div>
+    </nav>
+    
+   </header>
 
   <div class="swiper-wrapper">
     
@@ -820,6 +820,40 @@
           </button>
         </div>
         <h5 class="modal-title" id="exampleModalLabel">ЗАЯВКА НА ТУР</h5>
+        
+      </div>
+      <div class="modal-body">
+
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="E-mail">
+        <input type="number" placeholder="Количество туристов">
+        <textarea placeholder="Дополнительно" rows="3"></textarea>
+        <p class="polit">
+          Нажимая на кнопку, я даю согласие на обработку моих персональных данных согласно <a href="" class="my-link"> политике компании </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-req btn-outline-secondary">
+          ОСТАВИТЬ ЗАЯВКУ
+       </button>      
+    </div>
+    </form>
+
+  </div>
+</div>
+
+<div class="modal fade modal-first" id="modalSecond" tabindex="-1" aria-labelledby="modalSecondLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+
+    <form name="modal-form" method="post">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header__close">
+          <button type="button" class="btn modal-close" style="background-image: url('/img/icons/Plus +.png');" data-bs-dismiss="modalSecond" aria-label="Закрыть">
+          </button>
+        </div>
+        <h5 class="modal-title" id="modalSecondLabel">ЗАЯВКА НА ТУР</h5>
         
       </div>
       <div class="modal-body">
