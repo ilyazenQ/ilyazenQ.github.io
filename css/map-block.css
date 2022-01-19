@@ -244,12 +244,12 @@
     src: url("#FontID0") format(svg);
   }
 }
-.map-block__map .yakutia-map .str9 {
-  stroke-width: 27;
-  stroke-miterlimit: 22.9256;
-}
 .map-block__map .yakutia-map .str5 {
   stroke-width: 19.6;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str11 {
+  stroke-width: 24;
   stroke-miterlimit: 22.9256;
 }
 .map-block__map .yakutia-map .str3 {
@@ -258,6 +258,11 @@
   stroke-miterlimit: 22.9256;
 }
 .map-block__map .yakutia-map .str7 {
+  stroke: aqua;
+  stroke-width: 121.9;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str9 {
   stroke: white;
   stroke-width: 121.9;
   stroke-miterlimit: 22.9256;
@@ -272,19 +277,22 @@
   stroke-width: 200;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str8 {
-  stroke: white;
+.map-block__map .yakutia-map .str10 {
+  stroke: aqua;
   stroke-width: 200;
   stroke-miterlimit: 22.9256;
-  fill: aqua !important;
-  opacity: 0.9;
 }
 .map-block__map .yakutia-map .str6 {
+  stroke: aqua;
+  stroke-width: 76.2;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str12 {
   stroke: white;
   stroke-width: 76.2;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str10 {
+.map-block__map .yakutia-map .str8 {
   stroke: white;
   stroke-width: 76.2;
   stroke-miterlimit: 22.9256;
@@ -296,28 +304,52 @@
   stroke-linejoin: round;
   stroke-miterlimit: 22.9256;
 }
+.map-block__map .yakutia-map .str13 {
+  stroke: white;
+  stroke-width: 400;
+  stroke-miterlimit: 22.9256;
+  stroke-dasharray: 400 1200;
+}
 .map-block__map .yakutia-map .str1 {
   stroke: aqua;
   stroke-width: 200;
   stroke-miterlimit: 22.9256;
   stroke-dasharray: 1000 1000;
 }
-.map-block__map .yakutia-map .fil1 {
+.map-block__map .yakutia-map .fil3 {
   fill: none;
 }
-.map-block__map .yakutia-map .fil4 {
-  fill: white;
+.map-block__map .yakutia-map .fil1 {
+  fill: none;
+  fill-rule: nonzero;
 }
-.map-block__map .yakutia-map .fil2 {
+.map-block__map .yakutia-map .fil4 {
   fill: aqua;
 }
-.map-block__map .yakutia-map .fil3 {
+.map-block__map .yakutia-map .fil2 {
+  fill: #11C2AD;
+}
+.map-block__map .yakutia-map .fil6 {
+  fill: white;
+}
+.map-block__map .yakutia-map .fil5 {
   fill: white;
 }
 .map-block__map .yakutia-map .fil0 {
-  fill: aqua;
+  fill: #11C2AD;
   fill-rule: nonzero;
-  opacity: 0.6;
+}
+.map-block__map .yakutia-map .fil8 {
+  fill: #1AF2D5;
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil9 {
+  fill: white;
+  fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fil7 {
+  fill: white;
+  fill-rule: nonzero;
 }
 .map-block__map .yakutia-map .fnt0 {
   font-weight: normal;
@@ -329,24 +361,27 @@
   font-size: 3880.6px;
   font-family: "Book Antiqua";
 }
-.map-block__map .yakutia-map .fnt4 {
-  font-weight: normal;
-  font-size: 3880.6px;
-  font-family: "Book Antiqua";
-}
 .map-block__map .yakutia-map .fnt1 {
   font-style: italic;
   font-weight: normal;
-  font-size: 2822.2px;
+  font-size: 3175px;
   font-family: "Book Antiqua";
 }
 .map-block__map .yakutia-map .fnt3 {
   font-style: italic;
   font-weight: normal;
-  font-size: 2822.2px;
+  font-size: 3175px;
   font-family: "Book Antiqua";
 }
-
+.map-block__map .tour-test {
+  cursor: pointer;
+}
+.map-block__map .fill-test.tour-test text {
+  fill: aqua !important;
+}
+.map-block__map .fill-test.tour-test path {
+  fill: aqua !important;
+}
 @media (max-width: 1256px) {
   .map-block__map {
     z-index: 1;
