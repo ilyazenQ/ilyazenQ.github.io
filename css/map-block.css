@@ -228,9 +228,18 @@
 }
 @font-face {
   .map-block__map .yakutia-map {
-    font-family: "Book Antiqua";
+    font-family: "Consolas";
     font-variant: normal;
     font-style: normal, italic;
+    font-weight: normal;
+    src: url("#FontID6") format(svg);
+  }
+}
+@font-face {
+  .map-block__map .yakutia-map {
+    font-family: "Arial";
+    font-variant: normal;
+    font-style: normal;
     font-weight: normal;
     src: url("#FontID1") format(svg);
   }
@@ -244,11 +253,11 @@
     src: url("#FontID0") format(svg);
   }
 }
-.map-block__map .yakutia-map .str5 {
+.map-block__map .yakutia-map .str6 {
   stroke-width: 19.6;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str10 {
+.map-block__map .yakutia-map .str9 {
   stroke-width: 24;
   stroke-miterlimit: 22.9256;
 }
@@ -257,17 +266,7 @@
   stroke-width: 500;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str13 {
-  stroke: aqua;
-  stroke-width: 121.9;
-  stroke-miterlimit: 22.9256;
-}
-.map-block__map .yakutia-map .str9 {
-  stroke: white;
-  stroke-width: 121.9;
-  stroke-miterlimit: 22.9256;
-}
-.map-block__map .yakutia-map .str7 {
+.map-block__map .yakutia-map .str5 {
   stroke: white;
   stroke-width: 121.9;
   stroke-miterlimit: 22.9256;
@@ -282,22 +281,17 @@
   stroke-width: 200;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str11 {
-  stroke: aqua;
-  stroke-width: 76.2;
-  stroke-miterlimit: 22.9256;
-}
-.map-block__map .yakutia-map .str12 {
-  stroke: aqua;
-  stroke-width: 76.2;
-  stroke-miterlimit: 22.9256;
-}
 .map-block__map .yakutia-map .str8 {
+  stroke: aqua;
+  stroke-width: 200;
+  stroke-miterlimit: 22.9256;
+}
+.map-block__map .yakutia-map .str10 {
   stroke: white;
   stroke-width: 76.2;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str6 {
+.map-block__map .yakutia-map .str7 {
   stroke: white;
   stroke-width: 76.2;
   stroke-miterlimit: 22.9256;
@@ -309,7 +303,7 @@
   stroke-linejoin: round;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str14 {
+.map-block__map .yakutia-map .str11 {
   stroke: white;
   stroke-width: 400;
   stroke-miterlimit: 22.9256;
@@ -328,12 +322,6 @@
   fill: none;
   fill-rule: nonzero;
 }
-.map-block__map .yakutia-map .fil6 {
-  fill: aqua;
-}
-.map-block__map .yakutia-map .fil7 {
-  fill: aqua;
-}
 .map-block__map .yakutia-map .fil2 {
   fill: #11C2AD;
 }
@@ -346,51 +334,90 @@
 .map-block__map .yakutia-map .fil0 {
   fill: #11C2AD;
   fill-rule: nonzero;
-  opacity: 0.8;
 }
-.map-block__map .yakutia-map .fil8 {
-  fill: #1AF2D5;
-  fill-rule: nonzero;
-}
-.map-block__map .yakutia-map .fil9 {
+.map-block__map .yakutia-map .fil6 {
   fill: white;
   fill-rule: nonzero;
+}
+.map-block__map .yakutia-map .fnt1 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt11 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt3 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt9 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt10 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Book Antiqua";
+}
+.map-block__map .yakutia-map .fnt2 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Book Antiqua";
+}
+.map-block__map .yakutia-map .fnt4 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Book Antiqua";
+}
+.map-block__map .yakutia-map .fnt8 {
+  font-weight: normal;
+  font-size: 3175px;
+  font-family: "Book Antiqua";
+}
+.map-block__map .yakutia-map .fnt5 {
+  font-weight: normal;
+  font-size: 3880.6px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt7 {
+  font-weight: normal;
+  font-size: 3880.6px;
+  font-family: "Arial";
 }
 .map-block__map .yakutia-map .fnt0 {
   font-weight: normal;
   font-size: 3880.6px;
   font-family: "Book Antiqua";
 }
-.map-block__map .yakutia-map .fnt2 {
-  font-weight: normal;
-  font-size: 3880.6px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt4 {
-  font-weight: normal;
-  font-size: 3880.6px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt1 {
+.map-block__map .yakutia-map .fnt12 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
-  font-family: "Book Antiqua";
+  font-family: "Consolas";
 }
-.map-block__map .yakutia-map .fnt3 {
+.map-block__map .yakutia-map .fnt6 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt5 {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Book Antiqua";
+  font-family: "Consolas";
 }
 .map-block__map .tour-test {
   cursor: pointer;
+}
+.map-block__map .tour-test text {
+  fill: white !important;
+  stroke: white !important;
+}
+.map-block__map .tour-test polygon {
+  display: none !important;
+}
+.map-block__map .tour-test path {
+  fill: #11C2AD !important;
 }
 .map-block__map .fill-test.tour-test text {
   fill: white !important;
@@ -398,6 +425,13 @@
 }
 .map-block__map .fill-test.tour-test path {
   fill: white !important;
+}
+.map-block__map .fill-test.tour-test polygon {
+  display: block !important;
+}
+.map-block__map .tour-test__way text {
+  fill: white !important;
+  stroke: white !important;
 }
 @media (max-width: 1256px) {
   .map-block__map {
