@@ -325,6 +325,7 @@
 .map-block__map .yakutia-map .fil0 {
   fill: #11C2AD;
   fill-rule: nonzero;
+  opacity: 0.75;
 }
 .map-block__map .yakutia-map .fnt1 {
   font-weight: normal;
