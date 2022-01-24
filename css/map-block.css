@@ -232,21 +232,12 @@
     font-variant: normal;
     font-style: normal, italic;
     font-weight: normal;
-    src: url("#FontID6") format(svg);
-  }
-}
-@font-face {
-  .map-block__map .yakutia-map {
-    font-family: "Arial";
-    font-variant: normal;
-    font-style: normal;
-    font-weight: normal;
     src: url("#FontID1") format(svg);
   }
 }
 @font-face {
   .map-block__map .yakutia-map {
-    font-family: "Book Antiqua";
+    font-family: "Arial";
     font-variant: normal;
     font-style: normal;
     font-weight: normal;
@@ -335,16 +326,7 @@
   fill: #11C2AD;
   fill-rule: nonzero;
 }
-.map-block__map .yakutia-map .fil6 {
-  fill: white;
-  fill-rule: nonzero;
-}
 .map-block__map .yakutia-map .fnt1 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Arial";
-}
-.map-block__map .yakutia-map .fnt11 {
   font-weight: normal;
   font-size: 3175px;
   font-family: "Arial";
@@ -354,53 +336,18 @@
   font-size: 3175px;
   font-family: "Arial";
 }
-.map-block__map .yakutia-map .fnt9 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Arial";
-}
-.map-block__map .yakutia-map .fnt10 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt2 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt4 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt8 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Book Antiqua";
-}
-.map-block__map .yakutia-map .fnt5 {
-  font-weight: normal;
-  font-size: 3880.6px;
-  font-family: "Arial";
-}
-.map-block__map .yakutia-map .fnt7 {
-  font-weight: normal;
-  font-size: 3880.6px;
-  font-family: "Arial";
-}
 .map-block__map .yakutia-map .fnt0 {
   font-weight: normal;
   font-size: 3880.6px;
-  font-family: "Book Antiqua";
+  font-family: "Arial";
 }
-.map-block__map .yakutia-map .fnt12 {
+.map-block__map .yakutia-map .fnt2 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
   font-family: "Consolas";
 }
-.map-block__map .yakutia-map .fnt6 {
+.map-block__map .yakutia-map .fnt4 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
