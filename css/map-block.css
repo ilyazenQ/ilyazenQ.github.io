@@ -230,7 +230,7 @@
   .map-block__map .yakutia-map {
     font-family: "Consolas";
     font-variant: normal;
-    font-style: normal, italic;
+    font-style: italic;
     font-weight: normal;
     src: url("#FontID1") format(svg);
   }
@@ -248,7 +248,7 @@
   stroke-width: 19.6;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str9 {
+.map-block__map .yakutia-map .str11 {
   stroke-width: 24;
   stroke-miterlimit: 22.9256;
 }
@@ -277,7 +277,7 @@
   stroke-width: 200;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str10 {
+.map-block__map .yakutia-map .str9 {
   stroke: white;
   stroke-width: 76.2;
   stroke-miterlimit: 22.9256;
@@ -294,7 +294,7 @@
   stroke-linejoin: round;
   stroke-miterlimit: 22.9256;
 }
-.map-block__map .yakutia-map .str11 {
+.map-block__map .yakutia-map .str10 {
   stroke: white;
   stroke-width: 400;
   stroke-miterlimit: 22.9256;
@@ -325,17 +325,6 @@
 .map-block__map .yakutia-map .fil0 {
   fill: #11C2AD;
   fill-rule: nonzero;
-  opacity: 0.75;
-}
-.map-block__map .yakutia-map .fnt1 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Arial";
-}
-.map-block__map .yakutia-map .fnt3 {
-  font-weight: normal;
-  font-size: 3175px;
-  font-family: "Arial";
 }
 .map-block__map .yakutia-map .fnt0 {
   font-weight: normal;
@@ -343,12 +332,17 @@
   font-family: "Arial";
 }
 .map-block__map .yakutia-map .fnt2 {
+  font-weight: normal;
+  font-size: 3880.6px;
+  font-family: "Arial";
+}
+.map-block__map .yakutia-map .fnt1 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
   font-family: "Consolas";
 }
-.map-block__map .yakutia-map .fnt4 {
+.map-block__map .yakutia-map .fnt3 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
@@ -360,9 +354,6 @@
 .map-block__map .tour-test text {
   fill: white !important;
   stroke: white !important;
-}
-.map-block__map .tour-test polygon {
-  display: none !important;
 }
 .map-block__map .tour-test path {
   fill: #11C2AD !important;
