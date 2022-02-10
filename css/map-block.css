@@ -231,16 +231,16 @@
 }
 @font-face {
   .map-block__map #baikal-map {
-    font-family: "Arial";
+    font-family: "Consolas";
     font-variant: normal;
-    font-style: italic;
+    font-style: normal, italic;
     font-weight: normal;
-    src: url("#FontID3") format(svg);
+    src: url("#FontID4") format(svg);
   }
 }
 @font-face {
   .map-block__map #baikal-map {
-    font-family: "Consolas";
+    font-family: "Arial";
     font-variant: normal;
     font-style: normal, italic;
     font-weight: normal;
@@ -334,7 +334,7 @@
 .map-block__map #baikal-map .fil0 {
   fill: #11C2AD;
   fill-rule: nonzero;
-  opacity: 0.7;
+  opacity: 75%;
 }
 .map-block__map #baikal-map .fnt0 {
   font-weight: normal;
@@ -346,12 +346,12 @@
   font-size: 3880.6px;
   font-family: "Arial";
 }
-.map-block__map #baikal-map .fnt4 {
+.map-block__map #baikal-map .fnt5 {
   font-weight: normal;
   font-size: 3880.6px;
   font-family: "Arial";
 }
-.map-block__map #baikal-map .fnt1 {
+.map-block__map #baikal-map .fnt4 {
   font-style: italic;
   font-weight: normal;
   font-size: 3175px;
@@ -363,13 +363,13 @@
   font-size: 3175px;
   font-family: "Consolas";
 }
-.map-block__map #baikal-map .fnt3 {
+.map-block__map #baikal-map .fnt1 {
   font-style: italic;
   font-weight: normal;
   font-size: 3880.6px;
   font-family: "Arial";
 }
-.map-block__map #baikal-map .fnt5 {
+.map-block__map #baikal-map .fnt3 {
   font-style: italic;
   font-weight: normal;
   font-size: 3880.6px;
