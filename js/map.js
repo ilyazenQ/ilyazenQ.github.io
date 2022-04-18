@@ -1,10 +1,9 @@
-"use strict";
-
-//let test = document.getElementById('test');
+"use strict"; //let test = document.getElementById('test');
 //test.addEventListener('click',(e) => {  
 //  document.querySelector('.accordion-button').click();
 //  document.querySelector('.accordion-button').focus();
 //});
+
 const accordionInMap = document.getElementById("accordionExample");
 accordionInMap.addEventListener('click', function (e) {
   if (window.screen.width <= 511) {
@@ -20,7 +19,7 @@ const Baikal = {
   'onList': {
     "el": document.querySelector("#BaikalOnList"),
     'listItems': [document.querySelector("#BaikalOnListItem1"), document.querySelector("#BaikalOnListItem2"), document.querySelector("#BaikalOnListItem3")],
-    'links': ['https://www.google.com/', 'https://www.google.com/i', 'https://www.google.com/2']
+    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#']
   },
   "addMap": {
     'el': document.querySelector("#baikal-map"),
@@ -36,7 +35,7 @@ const Buratia = {
   'onList': {
     "el": document.querySelector("#BurOnList"),
     'listItems': [document.querySelector("#BurOnListItem1"), document.querySelector("#BurOnListItem2"), document.querySelector("#BurOnListItem3"), document.querySelector("#BurOnListItem4")],
-    'links': ['https://www.google.com/', 'https://www.google.com/i', 'https://www.google.com/2', 'https://www.google.com/2']
+    'links': ['https://siberiaexplorer.ru/mantry-doliny/', 'https://siberiaexplorer.ru/nerpy-na-solncze/', 'https://siberiaexplorer.ru/za-kulisami-tajgi/', 'https://www.google.com/2']
   },
   "addMap": {
     'el': document.querySelector("#bur-map"),
@@ -44,7 +43,23 @@ const Buratia = {
     'ways': [[document.querySelector(".BurTourWay1")], [document.querySelector(".BurTourWay2")], [document.querySelector(".BurTourWay3")], [document.querySelector(".BurTourWay4")]]
   }
 };
-const locations = [Baikal, Buratia];
+const Sakhalin = {
+  'onMainMap': {
+    'el': document.querySelector("#RU-SAK"),
+    'items': []
+  },
+  'onList': {
+    "el": document.querySelector("#SakOnList"),
+    'listItems': [document.querySelector("#SakOnListItem1"), document.querySelector("#SakOnListItem2")],
+    'links': ['https://siberiaexplorer.ru/mantry-doliny/', 'https://siberiaexplorer.ru/nerpy-na-solncze/']
+  },
+  "addMap": {
+    'el': document.querySelector("#sah-map"),
+    'tours': [document.querySelector(".SakTour1"), document.querySelector(".SakTour2")],
+    'ways': [[document.querySelector(".SakTourWay1")], [document.querySelector(".SakTourWay2")]]
+  }
+};
+const locations = [Baikal, Buratia, Sakhalin];
 
 function hiddenNotActiveMap(activeMap) {
   locations.forEach(el => {
@@ -237,43 +252,119 @@ locations.forEach(el => {
       listTour.children[0].classList.remove('__el-active');
     });
   }
-}); //const yakutiaLeft = document.querySelector(".yak-left");
-//const yakutuaMap = document.querySelector(".yakutia-map");
-//yakutiaLeft.addEventListener('click',function (e) {
-// mainMap.classList.toggle('hidden');
-//  yakutuaMap.classList.toggle('hidden');
-//});
-//inner location
-//const tour = document.querySelector(".tour-test");
-//const tourWay = document.querySelector(".tour-test__way");
-//tour.addEventListener('mouseover',function (e) {
-//  tour.classList.add('fill-test');
-//  tourWay.classList.remove('hidden');
-//});
-//tour.addEventListener('mouseout',function (e) {
-//  tour.classList.remove('fill-test');
-//  tourWay.classList.add('hidden');
-//});
-//const compas = document.querySelector('.compas-svg'),
-//compasKamchatka = document.querySelector('.kamchatka'),
+});
+const compas = document.querySelector('.compas-svg'); //compasKamchatka = document.querySelector('.kamchatka'),
 //compasMongolia = document.querySelector('.mongolia'),
-//compasArrow = document.querySelector('.compas-arrow');
-//let deg = 0;
-//function moveTheArrow(deg) {
-//  compasArrow.style.transform = `rotate(${deg}deg)`;
-//}
-//setInterval(() => {
-//  moveTheArrow(deg);
-//  deg++;
-//},40)
-//compasMongolia.addEventListener('mouseenter', function(e){
-// compasArrow.classList.add('change-mongolia');
-//  compasArrow.classList.remove('change-kamchatka');
-//});
-//compasKamchatka.addEventListener('mouseenter', function(e){
-//  compasArrow.classList.add('change-kamchatka');
-//  compasArrow.classList.remove('change-mongolia');
-//});
-// transform-box: fill-box;
-// transform-origin:15% 79%;
-//transform:rotate(90deg);
+
+const compasEl = {
+  "kisl": [document.querySelector('#kisl-word'), document.querySelector('.kisl-link'), "https//test.ru", 0],
+  "lepr": [document.querySelector('#lepr-word'), document.querySelector('.lepr-link'), "#", 60],
+  "itur": [document.querySelector('#itur-word'), document.querySelector('.itur-link'), "#", 100],
+  "mong": [document.querySelector('#mong-word'), document.querySelector('.mong-link'), "#", 140],
+  "tofa": [document.querySelector('#tofa-word'), document.querySelector('.tofa-link'), "#", 190],
+  "tuva": [document.querySelector('#tuva-word'), document.querySelector('.tuva-link'), "#", 240],
+  "puto": [document.querySelector('#puto-word'), document.querySelector('.puto-link'), "#", 280],
+  "lena": [document.querySelector('#lena-word'), document.querySelector('.lena-link'), "#", 330]
+};
+
+function removeFill(compasEl) {
+  for (let key in compasEl) {
+    compasEl[key][0].classList.remove("on-hover");
+  }
+}
+
+function compasElLogic(compasEl) {
+  for (let key in compasEl) {
+    compasEl[key][1].addEventListener('click', function (e) {
+      window.location.href = compasEl[key][2];
+    });
+    compasEl[key][1].addEventListener('mouseover', function (e) {
+      removeFill(compasEl);
+      compasEl[key][0].classList.remove("fill6");
+      compasEl[key][0].classList.add("on-hover");
+      moveTheArrow(compasEl[key][3]);
+      clearInterval(interval);
+    });
+    compasEl[key][1].addEventListener('mouseout', function (e) {
+      compasEl[key][0].classList.remove("on-hover");
+      compasEl[key][0].classList.add("fill6");
+    });
+  }
+}
+
+compasElLogic(compasEl);
+const compasArrow = document.querySelector('.compas-arrow');
+
+function moveTheArrow(deg) {
+  compasArrow.style.transform = `rotate(${deg}deg)`;
+}
+
+function fillWhenArrow(deg) {
+  if (deg > 350 && deg < 360 || deg > 0 && deg < 10) {
+    compasEl.lena[0].classList.remove("on-hover");
+    compasEl.lena[0].classList.add("fill6");
+    compasEl.kisl[0].classList.remove("fill6");
+    compasEl.kisl[0].classList.add("on-hover");
+  }
+
+  if (deg > 40 && deg < 70) {
+    compasEl.kisl[0].classList.remove("on-hover");
+    compasEl.kisl[0].classList.add("fill6");
+    compasEl.lepr[0].classList.remove("fill6");
+    compasEl.lepr[0].classList.add("on-hover");
+  }
+
+  if (deg > 80 && deg < 110) {
+    compasEl.lepr[0].classList.remove("on-hover");
+    compasEl.lepr[0].classList.add("fill6");
+    compasEl.itur[0].classList.remove("fill6");
+    compasEl.itur[0].classList.add("on-hover");
+  }
+
+  if (deg > 120 && deg < 140) {
+    compasEl.itur[0].classList.remove("on-hover");
+    compasEl.itur[0].classList.add("fill6");
+    compasEl.mong[0].classList.remove("fill6");
+    compasEl.mong[0].classList.add("on-hover");
+  }
+
+  if (deg > 160 && deg < 180) {
+    compasEl.mong[0].classList.remove("on-hover");
+    compasEl.mong[0].classList.add("fill6");
+    compasEl.tofa[0].classList.remove("fill6");
+    compasEl.tofa[0].classList.add("on-hover");
+  }
+
+  if (deg > 220 && deg < 240) {
+    compasEl.tofa[0].classList.remove("on-hover");
+    compasEl.tofa[0].classList.add("fill6");
+    compasEl.tuva[0].classList.remove("fill6");
+    compasEl.tuva[0].classList.add("on-hover");
+  }
+
+  if (deg > 260 && deg < 310) {
+    compasEl.tuva[0].classList.remove("on-hover");
+    compasEl.tuva[0].classList.add("fill6");
+    compasEl.puto[0].classList.remove("fill6");
+    compasEl.puto[0].classList.add("on-hover");
+  }
+
+  if (deg > 320 && deg < 340) {
+    compasEl.puto[0].classList.remove("on-hover");
+    compasEl.puto[0].classList.add("fill6");
+    compasEl.lena[0].classList.remove("fill6");
+    compasEl.lena[0].classList.add("on-hover");
+  }
+}
+
+var deg = 0;
+var interval = setInterval(function () {
+  deg++;
+
+  if (deg % 360 === 0) {
+    deg = 0;
+  }
+
+  moveTheArrow(deg);
+  fillWhenArrow(deg);
+}, 40);
