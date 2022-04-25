@@ -1,8 +1,4 @@
-"use strict"; //let test = document.getElementById('test');
-//test.addEventListener('click',(e) => {  
-//  document.querySelector('.accordion-button').click();
-//  document.querySelector('.accordion-button').focus();
-//});
+"use strict";
 
 const accordionInMap = document.getElementById("accordionExample");
 accordionInMap.addEventListener('click', function (e) {
@@ -14,7 +10,9 @@ const mainMap = document.querySelector(".main-map");
 const Baikal = {
   'onMainMap': {
     'el': document.querySelector("#RU-IRK"),
-    'items': []
+    'items': [],
+    'array_el': []
+
   },
   'onList': {
     "el": document.querySelector("#BaikalOnList"),
@@ -30,7 +28,8 @@ const Baikal = {
 const Buratia = {
   'onMainMap': {
     'el': document.querySelector("#RU-BU"),
-    'items': []
+    'items': [],
+    'array_el': []
   },
   'onList': {
     "el": document.querySelector("#BurOnList"),
@@ -46,7 +45,8 @@ const Buratia = {
 const Sakhalin = {
   'onMainMap': {
     'el': document.querySelector("#RU-SAK"),
-    'items': []
+    'items': [],
+    'array_el': []
   },
   'onList': {
     "el": document.querySelector("#SakOnList"),
@@ -59,7 +59,29 @@ const Sakhalin = {
     'ways': [[document.querySelector(".SakTourWay1")], [document.querySelector(".SakTourWay2")]]
   }
 };
-const locations = [Baikal, Buratia, Sakhalin];
+const Kuril = {
+  'onMainMap': {
+    'el': document.querySelector("#_1929002925664"),
+    'array_el':[document.querySelector("#RU-SAK_0"),document.querySelector("#RU-SAK_1"),document.querySelector("#RU-SAK_2"),document.querySelector("#RU-SAK_3"),document.querySelector("#RU-SAK_4"),document.querySelector("#RU-SAK_5"),document.querySelector("#RU-SAK_6"),
+    document.querySelector("#RU-SAK_7"),document.querySelector("#RU-SAK_8"),document.querySelector("#RU-SAK_9"),document.querySelector("#RU-SAK_10"),document.querySelector("#RU-SAK_11"),document.querySelector("#RU-SAK_12"),document.querySelector("#RU-SAK_13"),],
+    'items': []
+  },
+  'onList': {
+    "el": document.querySelector("#KurOnList"),
+    'listItems': [document.querySelector("#KurOnListItem1"), 
+    document.querySelector("#KurOnListItem2")],
+    'links': ['https://siberiaexplorer.ru/mantry-doliny/', 'https://siberiaexplorer.ru/nerpy-na-solncze/']
+  },
+  "addMap": {
+    'el': document.querySelector("#kur-map"),
+    'tours': [document.querySelector(".KurTour1"), document.querySelector(".KurTour2")],
+    'ways': [[document.querySelector(".KurTourWay1")], 
+    [document.querySelector(".KurTourWay2")]]
+  }
+
+}
+
+const locations = [Baikal, Buratia, Sakhalin, Kuril];
 
 function hiddenNotActiveMap(activeMap) {
   locations.forEach(el => {
@@ -87,6 +109,8 @@ function hoverLocationOnMainMap() {
 locations.forEach(el => {
   // Скрыть элементы на мейн карте и пркрасить в белый
   let itemsOnMainMap = el.onMainMap.items;
+
+  let arrayElOnMainMap = el.onMainMap.array_el;
 
   for (let i = 0; i < itemsOnMainMap.length; i++) {
     itemsOnMainMap[i].classList.add('hidden'); // При наведении
@@ -120,8 +144,11 @@ locations.forEach(el => {
       itemsOnMainMap[i].classList.add('fill-white');
       itemsOnMainMap[i].classList.add('stroke-white');
     }
-  } // Клик по заголовку списка
-
+  } 
+  
+  
+  
+  // Клик по заголовку списка
 
   let LocationTitleOnList = el.onList.el;
   LocationTitleOnList.addEventListener('click', function () {
@@ -134,7 +161,8 @@ locations.forEach(el => {
     } else {
       activeMap.classList.toggle('hidden');
     }
-  }); // Клик по мейн карте
+  }); 
+  // Клик по мейн карте
 
   let LocationOnMainList = el.onMainMap.el;
   LocationOnMainList.addEventListener('click', function () {
@@ -144,7 +172,9 @@ locations.forEach(el => {
 
   LocationTitleOnList.addEventListener('click', function () {
     window.location.href = link;
-  }); // Наведение на  заголовок списка
+  }); 
+  
+  // Наведение на  заголовок списка
 
   LocationTitleOnList.addEventListener('mouseover', function (e) {
     LocationOnMainList.classList.add('stroke-active');
@@ -152,7 +182,12 @@ locations.forEach(el => {
     for (let i = 0; i < itemsOnMainMap.length; i++) {
       itemsOnMainMap[i].classList.remove('hidden');
     }
-  }); // mouseout  c заголовок списка
+
+    for (let i = 0; i < arrayElOnMainMap.length; i++) {
+      arrayElOnMainMap[i].classList.add('stroke-active');
+    }
+  }); 
+  // mouseout  c заголовок списка
 
   LocationTitleOnList.addEventListener('mouseout', function (e) {
     LocationOnMainList.classList.remove('stroke-active');
@@ -160,7 +195,12 @@ locations.forEach(el => {
     for (let i = 0; i < itemsOnMainMap.length; i++) {
       itemsOnMainMap[i].classList.add('hidden');
     }
-  }); // mouseover on location main map
+    for (let i = 0; i < arrayElOnMainMap.length; i++) {
+      arrayElOnMainMap[i].classList.remove('stroke-active');
+    }
+  });
+  
+  // mouseover on location main map
 
   LocationOnMainList.addEventListener('mouseover', function () {
     LocationTitleOnList.classList.add("active");
@@ -169,7 +209,12 @@ locations.forEach(el => {
     for (let i = 0; i < itemsOnMainMap.length; i++) {
       itemsOnMainMap[i].classList.remove('hidden');
     }
-  }); // mouseout  on location main map
+
+    for (let i = 0; i < arrayElOnMainMap.length; i++) {
+      arrayElOnMainMap[i].classList.add('stroke-active');
+    }
+  }); 
+  // mouseout  on location main map
 
   LocationOnMainList.addEventListener('mouseout', function () {
     LocationTitleOnList.classList.remove("active");
@@ -178,7 +223,15 @@ locations.forEach(el => {
     for (let i = 0; i < itemsOnMainMap.length; i++) {
       itemsOnMainMap[i].classList.add('hidden');
     }
-  }); // Туры на картах локаций
+    for (let i = 0; i < arrayElOnMainMap.length; i++) {
+      arrayElOnMainMap[i].classList.remove('stroke-active');
+    }
+  }); 
+  
+  
+  
+  
+  // Туры на картах локаций
 
   let toursLength = el.onList.listItems.length;
 
