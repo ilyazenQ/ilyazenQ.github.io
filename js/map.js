@@ -98,7 +98,25 @@ const Kamch = {
   }
 };
 
-const locations = [Baikal, Buratia, Sakhalin, Kuril, Kamch];
+const KamchTest = {
+  'onMainMap': {
+    'el': "" ,
+    'items': [],
+    'array_el': []
+  },
+  'onList': {
+    "el": document.querySelector("#KamOnList-test"),
+    'listItems': [],
+    'links': []
+  },
+  "addMap": {
+    'el': document.querySelector("#kam-map-test"),
+    'tours': [],
+    'ways': []
+  }
+};
+
+const locations = [Baikal, Buratia, Sakhalin, Kuril, Kamch, KamchTest];
 
 function hiddenNotActiveMap(activeMap) {
   locations.forEach(el => {
