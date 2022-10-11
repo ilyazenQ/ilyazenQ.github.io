@@ -1,9 +1,17 @@
 "use strict";
 
 const accordionInMap = document.getElementById("accordionExample");
-accordionInMap.addEventListener('click', function (e) {
-  if (window.screen.width <= 511) {
-    accordionInMap.style.paddingBottom = "80px";
+const lastElInAccordion = document.getElementsByClassName("accordion-item-last")[0];
+console.log(lastElInAccordion);
+lastElInAccordion.addEventListener('click', function (e) {
+  if (window.screen.width <= 611) {
+    let videoBlock = document.getElementsByClassName("video-block")[0];
+
+    if (videoBlock.style.height == "1050px") {
+      videoBlock.style.height = "1000px";
+    } else {
+      videoBlock.style.height = "1050px";
+    }
   }
 });
 const mainMap = document.querySelector(".main-map");
@@ -75,7 +83,6 @@ const Kuril = {
     'ways': [[document.querySelector(".KurTourWay1")], [document.querySelector(".KurTourWay2")]]
   }
 };
-
 const Kamch = {
   'onMainMap': {
     'el': document.querySelector("#RU-KAM"),
@@ -84,39 +91,33 @@ const Kamch = {
   },
   'onList': {
     "el": document.querySelector("#KamOnList"),
-    'listItems': [document.querySelector("#KamOnListItem1"), document.querySelector("#KamOnListItem2"),document.querySelector("#KamOnListItem3"),document.querySelector("#KamOnListItem4")],
-    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#',"#"]
+    'listItems': [document.querySelector("#KamOnListItem1"), document.querySelector("#KamOnListItem2"), document.querySelector("#KamOnListItem3"), document.querySelector("#KamOnListItem4")],
+    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#', "#"]
   },
   "addMap": {
     'el': document.querySelector("#kam-map"),
     'tours': [document.querySelector(".KamTour1"), document.querySelector(".KamTour2"), document.querySelector(".KamTour3"), document.querySelector(".KamTour4")],
-    'ways': [[document.querySelector(".KamTourWay1"), 
-    document.querySelector(".KamAddWay")], 
-    [document.querySelector(".KamTourWay2")], 
-    [document.querySelector(".KamTourWay3")], 
-    [document.querySelector(".KamTourWay4")]]
+    'ways': [[document.querySelector(".KamTourWay1"), document.querySelector(".KamAddWay")], [document.querySelector(".KamTourWay2")], [document.querySelector(".KamTourWay3")], [document.querySelector(".KamTourWay4")]]
   }
 };
-
-const KamchTest = {
+const Yak = {
   'onMainMap': {
-    'el': "" ,
+    'el': document.querySelector("#RU-SA_0"),
     'items': [],
     'array_el': []
   },
   'onList': {
-    "el": document.querySelector("#KamOnList-test"),
-    'listItems': [],
-    'links': []
+    "el": document.querySelector("#YakOnList"),
+    'listItems': [document.querySelector("#YakOnListItem1"), document.querySelector("#YakOnListItem2"), document.querySelector("#YakOnListItem3"), document.querySelector("#YakOnListItem4"), document.querySelector("#YakOnListItem5"), document.querySelector("#YakOnListItem6")],
+    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#', "#"]
   },
   "addMap": {
-    'el': document.querySelector("#kam-map-test"),
-    'tours': [],
-    'ways': []
+    'el': document.querySelector("#yak-map"),
+    'tours': [document.querySelector(".KamTour1"), document.querySelector(".KamTour2"), document.querySelector(".KamTour3"), document.querySelector(".KamTour4")],
+    'ways': [[document.querySelector(".KamTourWay1"), document.querySelector(".KamAddWay")], [document.querySelector(".KamTourWay2")], [document.querySelector(".KamTourWay3")], [document.querySelector(".KamTourWay4")]]
   }
 };
-
-const locations = [Baikal, Buratia, Sakhalin, Kuril, Kamch, KamchTest];
+const locations = [Baikal, Buratia, Sakhalin, Kuril, Kamch, Yak];
 
 function hiddenNotActiveMap(activeMap) {
   locations.forEach(el => {
