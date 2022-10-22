@@ -1,19 +1,30 @@
 "use strict";
 
 const accordionInMap = document.getElementById("accordionExample");
-const lastElInAccordion = document.getElementsByClassName("accordion-item-last")[0];
-console.log(lastElInAccordion);
-lastElInAccordion.addEventListener('click', function (e) {
-  if (window.screen.width <= 611) {
-    let videoBlock = document.getElementsByClassName("video-block")[0];
+const accordionHeaders = document.getElementsByClassName("accordion-header");
 
-    if (videoBlock.style.height == "1050px") {
-      videoBlock.style.height = "1000px";
-    } else {
-      videoBlock.style.height = "1050px";
-    }
+if (window.screen.width <= 756 && window.screen.width > 576) {
+  const accordionHeaders = document.getElementsByClassName('accordion-header');
+
+  for (let i = 0; i < accordionHeaders.length; i++) {
+    accordionHeaders[i].addEventListener('click', function (e) {
+      let videoBlock = document.getElementsByClassName("video-block")[0];
+      videoBlock.style.height = "1115px";
+    });
   }
-});
+}
+
+if (window.screen.width <= 576) {
+  const accordionHeaders = document.getElementsByClassName('accordion-header');
+
+  for (let i = 0; i < accordionHeaders.length; i++) {
+    accordionHeaders[i].addEventListener('click', function (e) {
+      let videoBlock = document.getElementsByClassName("video-block")[0];
+      videoBlock.style.height = "1050px";
+    });
+  }
+}
+
 const mainMap = document.querySelector(".main-map");
 const Baikal = {
   'onMainMap': {
