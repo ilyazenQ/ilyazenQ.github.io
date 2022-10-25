@@ -119,13 +119,13 @@ const Yak = {
   },
   'onList': {
     "el": document.querySelector("#YakOnList"),
-    'listItems': [document.querySelector("#YakOnListItem1"), document.querySelector("#YakOnListItem2"), document.querySelector("#YakOnListItem3"), document.querySelector("#YakOnListItem4"), document.querySelector("#YakOnListItem5"), document.querySelector("#YakOnListItem6")],
-    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#', "#"]
+    'listItems': [document.querySelector("#YakOnListItem1"), document.querySelector("#YakOnListItem2"), document.querySelector("#YakOnListItem3"), document.querySelector("#YakOnListItem4"), document.querySelector("#YakOnListItem5")],
+    'links': ['https://siberiaexplorer.ru/lyod-i-zvyozdy/', 'https://siberiaexplorer.ru/ice-kingdom/', '#', "#", "#"]
   },
   "addMap": {
     'el': document.querySelector("#yak-map"),
-    'tours': [document.querySelector(".KamTour1"), document.querySelector(".KamTour2"), document.querySelector(".KamTour3"), document.querySelector(".KamTour4")],
-    'ways': [[document.querySelector(".KamTourWay1"), document.querySelector(".KamAddWay")], [document.querySelector(".KamTourWay2")], [document.querySelector(".KamTourWay3")], [document.querySelector(".KamTourWay4")]]
+    'tours': [document.querySelector(".YakTour1"), document.querySelector(".YakTour2"), document.querySelector(".YakTour3"), document.querySelector(".YakTour4"), document.querySelector(".YakTour5")],
+    'ways': [[document.querySelector(".YakTourWay1"), document.querySelector(".YakAddWay")], [document.querySelector(".YakTourWay2"), document.querySelector(".YakAddWay")], [document.querySelector(".YakTourWay3"), document.querySelector(".YakAddWay")], [document.querySelector(".YakTourWay4"), document.querySelector(".YakAddWay2")], [document.querySelector(".YakTourWay5"), document.querySelector(".YakAddWay2")]]
   }
 };
 const locations = [Baikal, Buratia, Sakhalin, Kuril, Kamch, Yak];
